@@ -1,0 +1,77 @@
+.addToPlaylist{
+    width: 35px;
+    height: 35px;
+    margin-top: 5px;
+}
+
+.dropdown{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    pointer-events: none;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.4);
+    transition: opacity 0.3s ease;
+}
+
+.show {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.addToPlaylist:hover{
+    background-color: #8df6b041;
+    border-radius: 50%;
+    transform: scale(1.1);
+}
+
+.dropdown_menu{
+    max-width: 200px;
+    background-color: #222831;
+    position: absolute;
+    color: #29a19c;
+    border-radius: 10px;
+    border: 2px solid #289e9a75;
+    border-style: ridge;
+    position: relative;
+}
+.close{
+    position: absolute;
+    top: 3px;
+    right: 5px;
+}
+
+.close:hover{
+    transform: scale(1.2);
+    color: #a3f7bf;
+}
+
+.dropdown_menu ul{
+    margin: 20px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-size: large;
+    font-weight: 500;
+}
+.dropdown_menu ul li{
+    border-bottom: 1px solid #289e9a75;
+    width: 100%;
+}
+
+.dropdown_menu ul li:hover{
+    background-color: #393e46;
+    border-radius: 5px;
+}
+
+.dropdown_menu input{
+    background-color: #393e46;
+    color: #29a19c;
+}

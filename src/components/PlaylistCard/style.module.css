@@ -1,0 +1,25 @@
+.playlistCard{
+    background-color: #393e46;
+    border: 2px solid #289e9a75;
+    color: #a3f7bf;
+    border-radius: 5px;
+    border-style: ridge;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 25%;
+    min-height: 50%;
+    max-height: 50%;
+    padding: 10px;
+    margin: 10px;
+    overflow-y: scroll;
+    cursor: pointer;
+}
+
+.thumbnail{
+    height: 50%;
+    width: 50%;
+    border: 2px solid black;
+    border-radius: 5px;
+}

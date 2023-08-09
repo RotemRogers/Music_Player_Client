@@ -1,0 +1,100 @@
+.songcard{
+    position: relative;
+    background-color:  #393e46;
+    border: 2px solid #289e9a75;
+    border-style: ridge;
+    color: #a3f7bf;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 25%;
+    min-height: 50%;
+    max-height: 50%;
+    padding: 10px;
+    margin: 10px;
+    overflow-y: scroll;
+}
+
+.controls{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    cursor: pointer;
+}
+
+.delete_song{
+    position: absolute;
+    top: 5px;
+    left: 5px;
+}
+
+.delete_button{
+    width: 20px;
+    height: 20px;
+}
+
+.favorites{
+    width: 35px;
+    height: 35px;
+    margin-top: 3px;
+}
+
+.favorites:hover{
+    background-color: #8df6b01f;
+    border-radius: 50%;
+    transform: scale(1.1);
+}
+
+.songcard button{
+    background-color: #222831;
+    color: #29a19c;
+    height: 35px;
+    width: 75px;
+    border-radius: 7px;
+    border-style: none;
+}
+
+.songcard button:hover{
+    color: #222831;
+    background-color: #29a19c;
+}
+
+.thumbnail{
+    height: 50%;
+    width: 50%;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+@media screen and (max-width: 1180px) {
+    .songcard {
+      /* width: 33.33%; */
+      height: 200px;
+    }
+    .thumbnail {
+      height: 100%;
+    }
+  }
+  @media screen and (max-width: 1024px) {
+    .songcard {
+      width: 33.33%;
+      height: 200px;
+    }
+    .thumbnail {
+      height: 100%;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .songcard {
+      width: 50%;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .songcard {
+      width: 100%;
+    }
+  }
